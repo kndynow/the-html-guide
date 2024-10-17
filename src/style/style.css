@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap");
+
+body {
+  background: #10003f;
+}
+
+h1 {
+  color: white;
+  font-size: 13rem;
+  font-family: "Handjet", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 80%;
+}
+h2{
+    color: white;
+}
