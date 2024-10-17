@@ -13,5 +13,9 @@ h1 {
   line-height: 80%;
 }
 h2{
+    font-family: 'Handjet', sans-serif;
+    font-size: 4rem;
     color: white;
+    font-weight: 400;
+    font-style: normal;
 }
