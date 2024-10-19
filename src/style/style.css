@@ -1,35 +1,51 @@
 @import url("https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap");
 
-body {
-  background: #10003f;
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: .2fr 1.5fr 1.2fr .8fr;
+  background-color:hsl(270, 50%, 20%);
+  grid-template-areas:
+  "nav nav nav nav"
+  "main main main main"
+  "content1 content2 content3 content4"
+  "footer footer footer footer"
+
+  ;
 }
 
-/* h1 {
-  color: white;
-  font-size: 13rem;
-  font-family: "Handjet", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 80%;
+nav{
+  background-color:hsl(270, 50%, 70%);
+  grid-area: nav;
 }
-h2{
-    font-family: 'Handjet', sans-serif;
-    font-size: 4rem;
-    color: white;
-    font-weight: 400;
-    font-style: normal;
-} */
-.container{
-    display: grid;
-    grid-template-columns: 12, fr1;
-
+main{
+  background-color:hsl(270, 50%, 65%);
+  grid-area: main;
 }
 
-
-.gridItem{
-    width: 150px;
-    height: 150px;
-    border: 1px solid red;
-    background-color: blueviolet;
-
+#content1{
+  background-color:hsl(270, 50%, 60%);
+  grid-area: content1;
 }
+
+#content2{
+  background-color:hsl(270, 50%, 55%);
+  grid-area: content2;
+}
+
+#content3{
+  background-color:hsl(270, 50%, 50%);
+  grid-area: content3;
+}
+
+#content4{
+  background-color:hsl(270, 50%, 45%);
+  grid-area: content4;
+}
+
+footer{
+  background-color:hsl(270, 50%, 40%);
+  grid-area: footer;
+}
+
